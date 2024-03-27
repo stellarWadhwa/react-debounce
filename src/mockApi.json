@@ -1,0 +1,55 @@
+{
+    "searchResults": [
+      {
+        "name": "John Doe",
+        "age": 30,
+        "occupation": "Software Engineer"
+      },
+      {
+        "name": "Jane Smith",
+        "age": 25,
+        "occupation": "Data Scientist"
+      },
+      {
+        "name": "Alice Johnson",
+        "age": 35,
+        "occupation": "Product Manager"
+      },
+      {
+        "name": "Michael Brown",
+        "age": 28,
+        "occupation": "UX Designer"
+      },
+      {
+        "name": "Emily Davis",
+        "age": 32,
+        "occupation": "Marketing Specialist"
+      },
+      {
+        "name": "Daniel Wilson",
+        "age": 40,
+        "occupation": "Financial Analyst"
+      },
+      {
+        "name": "Sophia Taylor",
+        "age": 27,
+        "occupation": "Graphic Designer"
+      },
+      {
+        "name": "James Anderson",
+        "age": 45,
+        "occupation": "Project Manager"
+      },
+      {
+        "name": "Olivia Martinez",
+        "age": 29,
+        "occupation": "HR Manager"
+      },
+      {
+        "name": "William Clark",
+        "age": 38,
+        "occupation": "Sales Representative"
+      }
+    ]
+  }
+  

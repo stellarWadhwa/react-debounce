@@ -8,11 +8,12 @@ const Search = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get('https://mocki.io/v1/a588da9e-a704-46ad-9347-e3420cef6e40');
-        setData(res.data);
+        const res = await axios.get('https://mocki.io/v1/1231969b-6aa3-499b-9edd-7d8106736f59');
+        setData(res.data.searchResults);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
+
     };
 
     fetchData();
@@ -22,11 +23,11 @@ const Search = () => {
     let timer;
     return (...args) => {
       clearTimeout(timer);
-      timer = setTimeout(() => { func.apply(this, args); }, 1000);
+      timer = setTimeout(() => { func.apply(this, args); }, 3000);
     };
   };
 
-  const handleChange = debounce((e) => {
+const handleChange = debounce((e) => {
     const searchValue = e.target.value.toLowerCase(); // Convert search value to lowercase
 
     if (searchValue === '') {
@@ -34,8 +35,9 @@ const Search = () => {
     } else {
       const filteredData = data.filter(user =>
         user.name.toLowerCase().startsWith(searchValue)
+        
       );
-      setListdata(filteredData); // Update listdata state with filtered data
+            setListdata(filteredData); // Update listdata state with filtered data
     }
   });
 
